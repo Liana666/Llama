@@ -1,0 +1,187 @@
+*, *:before, *:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: 0;
+}
+
+@font-face {
+font-family: 'Museo Sans Cyrl'; 
+  src: url("../font/MuseoSansCyrl300.ttf");
+  font-weight: 300;
+}
+@font-face {
+font-family: 'Museo Sans Cyrl'; 
+  src: url("../font/MuseoSansCyrl-700.ttf");
+  font-weight: 700;
+}
+
+/*--------------------------------------------------*/
+
+.one_slide {
+	z-index: 7;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color:#ffb700;
+	background-image: url("../img/Эллипс 1.png");
+	background-repeat: no-repeat;
+	background-position: right 40%;
+	background-size: 35%;
+	padding: 0 10vw;
+	padding-top: 2vw;
+}
+
+@media (max-width: 767px) {
+	.one_slide {
+		background-position: right 30%;
+		background-size: 50%;
+	}
+}
+
+.one_slide .name {
+	position: absolute;
+	z-index: -100;
+	color: #fff;
+	font-family: 'Museo Sans Cyrl';
+	font-weight: 600;
+	font-size: 15vw;
+	top: 26%;
+}
+@media (max-width: 767px) {
+	.one_slide .name{
+		font-size: 85px;
+		top: 34px;
+	}
+}
+
+.one_slide .on_name {
+	z-index: -100;
+	position: absolute;
+	color: #fff;
+	font-family: 'Museo Sans Cyrl';
+	font-weight: 400;
+	font-size: 2vw;
+	letter-spacing: 0.42vw;
+	top: 33%;
+	left: 19%;
+	}
+	@media (max-width: 767px) {
+	.one_slide .on_name{
+		top: 43px;
+		font-size: 15px;
+		left: 120px;
+	}
+}
+
+.lama_photo {
+		z-index: 10;
+		width: 100%;
+		height: 100%;
+		background: url("../img/lama.png");
+		background-position: right 35% bottom 0%; /*Например справа размещаем картинку*/
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+		@media (max-width: 767px) {
+	.lama_photo {
+		background-size: 45%;
+	}
+}
+		@media (max-width: 568px) {
+	.lama_photo {
+		background-size: 55%;
+	}
+}
+	@media (max-width: 490px) {
+	.lama_photo {
+		background-position: right 55% bottom 0%;
+		background-size: 45%;
+	}
+	.one_slide {
+	background-position: right 80%;
+	background-size: 45%;
+}
+}
+	@media (max-width: 430px) {
+	.lama_photo {
+		background-position: right 55% bottom 0%;
+		background-size: 50%;
+	}
+	.one_slide {
+	background-position: right 80%;
+	background-size: 50%;
+}
+}
+	@media (max-width: 370px) {
+	.lama_photo {
+		background-position: right 55% bottom 0%;
+		background-size: 55%;
+	}
+	.one_slide {
+	background-position: right 80%;
+	background-size: 55%;
+}
+}
+
+header {
+	padding: 1vw 8vw;
+	left: 0;
+	top: 0;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	z-index: 50;
+}
+header:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background:  rgba(255, 194, 71, 0.4);
+		z-index: 6;
+	}
+
+.menu {
+	padding-left: 2.5vw;
+	z-index: 100;
+}
+.menu a {
+	text-align: center;
+}
+
+.menu li{
+	list-style: none;
+	display: flex;
+	float: left;
+	margin: 0 3vw;
+	color: #fff;
+	font-family: 'Museo Sans Cyrl';
+	font-weight: 600;
+	font-size: 1.2vw;
+
+}
+
+.logo {
+	z-index: 6;
+	color: #fff;
+	font-size: 1.5vw;
+	font-family: 'Museo Sans Cyrl';
+	font-weight: 700;
+	width: 13vw;
+}
+
+.logo:hover {
+	color: #000;
+}
+
+.menu_button {
+	right: 9vw;
+	position: absolute;
+}
+
+.menu_button a{
+	margin-left: 3vw;
+}
